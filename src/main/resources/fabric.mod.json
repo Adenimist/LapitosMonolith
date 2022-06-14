@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "lapitosmonolith",
+  "version": "${version}",
+
+  "name": "Lapitos Monolith",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Daniele 'Derkuth' Follesa"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT Licence",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.derkuth.lapitos.LapitosMonolith"
+    ],
+    "client": [
+      "net.derkuth.lapitos.LapitosMonolithClient"
+    ]
+  },
+  "mixins": [
+    "lapitosmonolith.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
